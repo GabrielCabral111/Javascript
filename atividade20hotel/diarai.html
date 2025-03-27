@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> reserva </title>
+</head>
+<body>
+
+    <h1>
+        faça uma diaria
+    </h1>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" target="_blank">Home</a>
+                </li>
+                <li>
+                    <a href="diarai.html">reserva</a>
+                </li>
+                <li>
+                    <a href="">cadastro</a>
+                </li>
+                <li>
+                    <a href="">eventos</a>
+                </li>
+                <li>
+                    <a href="">buffet</a>
+                </li>
+                <li>
+                    <a href="">auditorio</a>
+                </li>
+                <li>
+                    <a href="">posto</a>
+                </li>
+                <li>
+                    <a href="">manuteção/a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section>
+        <ul>
+            <li>
+                <a href="">Basico | Preço (diaria) : R$55,60</a>
+            </li>
+            <li>
+                <a href="">Premium | Preço (diaria) : R$100,00</a>
+            </li>
+            <li>
+                <a href="">Luxo | Preço (diaria) : R$150,00</a>
+            </li>
+        </ul>
+    </section>
+
+    <script>
+        const basico = 55.60
+        const premium = 100.00
+        const luxo = 150.00
+        let diaria = prompt(" Escolha o tipo de reserva" + "\n" +
+        "Basico | Preço (diaria) : R$55,60" + "\n" + "Premium | Preço (diaria) : R$100,00" + "\n" + "Luxo | Preço (diaria) : R$150,00"
+        )
+        let quantidade = parseInt(prompt("Quantos Dias ficara hospedados ? Não ultrapassar 30 dias"))
+        while(parseInt(quantidade ) && quantidade   >=30){
+            quantidadea = prompt(" aquantidades de dias ultrapasou coloque a quantidade correta");
+        }
+
+        let total  
+        switch( diaria){
+            case "basico":
+                total = basico * quantidade
+                alert(" o Valor Total da sua estadia será : "+"R$" + total.toFixed(2))
+                break
+            case "basico":
+                total = premium * quantidade
+                alert(" o Valor Total da sua estadia será : "+"R$" + total.toFixed(2))
+                break
+            case "basico":
+                total = luxo* quantidade
+                alert(" o Valor Total da sua estadia será : " +"R$" + total.toFixed(2))
+                break 
+                default:alert(" escolha uma reserva para a estadia valido")        
+           
+        }
+
+    </script>
+
+</body>
+</html>

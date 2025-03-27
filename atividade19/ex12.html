@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+         let peso = prompt(" Coloque seu peso");
+        
+         while(isNaN(peso ) || peso   <= 0){
+            peso = prompt("Coloque seu peso correto");
+        }
+
+        let altura = prompt("Coloque seu altura")
+        
+        while(isNaN(altura ) || altura   <= 0){
+            altura = prompt("Coloque seu altura correta");
+        }
+
+        let total = peso / Math.pow(altura, 2)
+
+        document.write("sua imc e :" + total.toFixed(2) + "kg/m2")
+
+
+    </script>
+    
+</body>
+</html>

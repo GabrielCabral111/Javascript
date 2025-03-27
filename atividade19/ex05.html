@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+</head>
+<body>
+    <h1>leia o preço de um produto e a quantidade comprada, e calcule o valor total</h1>
+
+    <script>
+
+        let produto = parseFloat(prompt("Digite o preço do produto"));
+
+        let quantidade = parseFloat(prompt("Digite a quantidade do produto"));
+
+        let total = produto * quantidade
+        if(quantidade>=10){
+            total = total * 0.9 ;
+        };
+
+        document.write("o total a pagar e de :" + total);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numeros invertidos</title>
+</head>
+<body>
+    <h1>invertendo</h1>
+
+    <script>
+
+         let numero1  = parseFloat(prompt("Digite o seu salário bruto"));
+
+        while(isNaN(numero1 ) || numero1   <= 0){
+            numero1 = prompt("Valor invalido! Digite um numero1  (maioe que zero)")
+        };
+
+        let numero2  = parseFloat(prompt("Digite o seu salário bruto"));
+
+        while(isNaN(numero2 ) || numero2   <= 0){
+            numero2  = prompt("Valor invalido! Digite um numero1  (maioe que zero)")
+        };
+
+        invert = numero1;
+        numero1= numero2;
+        numero2 = invert;
+
+
+        
+
+        document.write("o numero 1 :" + numero1 + "</br>" + "numero 2 :" + numero2)
+
+
+
+
+
+    </script>
+</body>
+</html>

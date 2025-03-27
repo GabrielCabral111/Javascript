@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> calculo de area e o perimetro</title>
+</head>
+<body>
+    <h1>Programa que leia o raio de um círculo e calcule sua área e perímetro.</h1>
+
+    <script>
+
+        let raio = parseFloat(prompt("Qual e o raio ?"));
+
+        let pi = 3.14 ;
+
+
+
+        let area = pi * Math.pow(raio, 2);
+        document.write("A area do circulos e de " + area + "cm²" + "</br>");
+
+        let perimetro = 2 * pi * raio
+        document.write("O perimetro do circulo e" + perimetro + "cm²");
+
+    </script>
+    
+</body>
+</html>

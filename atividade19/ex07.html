@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+</head>
+<body>
+    <h1>receba o salário base de um funcionário e calcule o seu salário líquido, considerando que o funcionário recebe 5% de comissão sobre o salário base.</h1>
+
+    <script>
+        let salariobruto  = parseFloat(prompt("Digite o seu salário bruto"));
+
+        while(isNaN(salariobruto) || salariobruto  <= 0){
+            salariobruto = prompt("Valor invalido! Digite um salário bruto válido (maioe que zero)")
+        };
+
+        let comissão = salariobruto * 0.05;
+
+        let salarioliquido = salariobruto + comissão
+        document.write("seu salário liquido e de:" + salarioliquido)
+
+
+    </script>
+    
+</body>
+</html>
