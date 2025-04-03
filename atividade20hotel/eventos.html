@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hotel</title>
+    <title>eventos</title>
 </head>
 <body>
     <header>
@@ -43,29 +43,20 @@
 
 
     <script>
-        let nomehotel = prompt("Qual o nome do Hotel")
-        
-        let nomeusuario = prompt("Qual o nome do usuario")
-
-        let senha = Number(prompt("Qual a senha do usuario"))
-
-        alert("O Nome do hotel é" + nomehotel);
-
-        if (senhaDoUsuario != 2678) {
-            alert("Senha inválida!");
-        } else {
-            alert("Bem vindo ao Hotel!" + nomehotel +" , " + nomeusuario);
+        var custo = 10.50
+        var hora = parseInt(prompt("Qual a duração do evento em horas?"))
+        var garcom = parseInt(prompt("Quantos garçons serão necessários?"))
+        alert('Custo total: R$ ' + ((hora * custo)*garcom).toFixed(2) )
+        var pergunta = prompt("Gostaria de efetuar a reserva? S/N")
+        if (pergunta == 'S'){
+            alert( 'Reserva efetuada com sucesso.')
+        }else{
+            alert("Reserva não efetuada.")
         }
 
 
 
-
-
-
     </script>
-
-
-
 
     
 </body>

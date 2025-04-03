@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buffet</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="diarai.html" target="_blank">reserva</a>
+                </li>
+                <li>
+                    <a href="cadastro.html">cadastro</a>
+                </li>
+                <li>
+                    <a href="cadastro2.html">cadastro</a>
+                </li>
+                <li>
+                    <a href="eventos.html">eventos</a>
+                </li>
+                <li>
+                    <a href="buffet.html">buffet</a>
+                </li>
+                <li>
+                    <a href="auditorio.html">auditorio</a>
+                </li>
+                <li>
+                    <a href="posto.html">posto</a>
+                </li>
+                <li>
+                    <a href="manutemcao.html">manuteção/a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <script>
+        var cafe = 0.2
+        var agua = 0.5
+        var salgado = 0.34
+        var convidados = parseInt(prompt("Qual o número de convidados para o evento?"))
+        var contador = 0
+        while(contador == 0){            
+            if(convidados > 350 || convidados < 0){
+            alert("Quantidade de convidados superior à capacidade máxima ou negativo.")
+            convidados = parseInt(prompt("Qual o número de convidados para o evento?"))
+            continue
+            }else if(convidados <= 350 && convidados > 0){
+                total = ((cafe * convidados) * 0.80) + ((agua * convidados)*0.40) + ((7*convidados)*salgado)
+                alert('O evento precisará de ' + ((cafe * convidados)) + ' litros de café, ' + ((agua * convidados)) + ' litros de água, ' + ((7*convidados)) + ' salgados. O custo total do evento será de R$ ' + total.toFixed(2))
+                pergunta = prompt( "Gostaria de efetuar a reserva? S/N")
+                if (pergunta == 'S'){
+                 alert( 'Reserva efetuada com sucesso.')
+                }else{
+                 alert("Reserva não efetuada.")
+                 }
+            }
+            contador += 1
+            
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

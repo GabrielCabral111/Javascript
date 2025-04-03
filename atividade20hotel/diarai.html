@@ -14,77 +14,74 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html" target="_blank">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="diarai.html">reserva</a>
                 </li>
                 <li>
-                    <a href="">cadastro</a>
+                    <a href="cadastro.html">cadastro</a>
                 </li>
                 <li>
-                    <a href="">eventos</a>
+                    <a href="cadastro2.html">cadastro</a>
                 </li>
                 <li>
-                    <a href="">buffet</a>
+                    <a href="eventos.html">eventos</a>
                 </li>
                 <li>
-                    <a href="">auditorio</a>
+                    <a href="buffet.html">buffet</a>
                 </li>
                 <li>
-                    <a href="">posto</a>
+                    <a href="auditorio.html">auditorio</a>
                 </li>
                 <li>
-                    <a href="">manuteção/a>
+                    <a href="posto.html">posto</a>
+                </li>
+                <li>
+                    <a href="manutemcao.html">manuteção/a>
                 </li>
             </ul>
 
         </nav>
     </header>
-
-    <section>
-        <ul>
-            <li>
-                <a href="">Basico | Preço (diaria) : R$55,60</a>
-            </li>
-            <li>
-                <a href="">Premium | Preço (diaria) : R$100,00</a>
-            </li>
-            <li>
-                <a href="">Luxo | Preço (diaria) : R$150,00</a>
-            </li>
-        </ul>
-    </section>
+    
 
     <script>
-        const basico = 55.60
-        const premium = 100.00
-        const luxo = 150.00
-        let diaria = prompt(" Escolha o tipo de reserva" + "\n" +
-        "Basico | Preço (diaria) : R$55,60" + "\n" + "Premium | Preço (diaria) : R$100,00" + "\n" + "Luxo | Preço (diaria) : R$150,00"
-        )
-        let quantidade = parseInt(prompt("Quantos Dias ficara hospedados ? Não ultrapassar 30 dias"))
-        while(parseInt(quantidade ) && quantidade   >=30){
-            quantidadea = prompt(" aquantidades de dias ultrapasou coloque a quantidade correta");
+        const basico = 55.60;
+        const premium = 100.00;
+        const luxo = 150.00;
+
+        let diaria = prompt(
+        "Escolha o tipo de reserva:\n" +
+        "Básico | Preço (diária): R$55,60\n" +
+        "Premium | Preço (diária): R$100,00\n" +
+        "Luxo | Preço (diária): R$150,00"
+        );
+
+        let quantidade = parseInt(prompt("Quantos dias ficará hospedado? (Máximo 30 dias)"));
+
+        while (isNaN(quantidade) || quantidade <= 0 || quantidade > 30) {
+        quantidade = parseInt(prompt("Quantidade inválida! Digite um número entre 1 e 30:"));
         }
 
-        let total  
-        switch( diaria){
-            case "basico":
-                total = basico * quantidade
-                alert(" o Valor Total da sua estadia será : "+"R$" + total.toFixed(2))
-                break
-            case "basico":
-                total = premium * quantidade
-                alert(" o Valor Total da sua estadia será : "+"R$" + total.toFixed(2))
-                break
-            case "basico":
-                total = luxo* quantidade
-                alert(" o Valor Total da sua estadia será : " +"R$" + total.toFixed(2))
-                break 
-                default:alert(" escolha uma reserva para a estadia valido")        
-           
+        let total;
+
+        switch (diaria) {
+        case "basico":
+            total = basico * quantidade;
+            break;
+        case "premium":
+            total = premium * quantidade;
+            break;
+        case "luxo":
+            total = luxo * quantidade;
+            break;
+        default:
+            alert("Escolha uma opção válida para a estadia.");
+            total;
         }
+
+        alert("O valor total da sua estadia será: R$ " + total.toFixed(2));
 
     </script>
 
