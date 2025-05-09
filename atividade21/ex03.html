@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <Script>
+        let soma = 0;       // Vai armazenar a soma dos números
+let quantidade = 0; // Vai contar quantos números existem entre 15 e 100
+
+for (let i = 15; i <= 100; i++) {
+  soma += i;         // Adiciona o valor de i à soma total
+  quantidade++;      // Conta quantos números foram somados
+}
+
+let media = soma / quantidade; // Calcula a média aritmética
+
+document.write("A média aritmética dos números de 15 a 100 é: " + media.toFixed(2));
+
+    </Script>
+</body>
+</html>
